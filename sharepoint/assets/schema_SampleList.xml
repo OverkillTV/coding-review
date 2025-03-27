@@ -1,0 +1,48 @@
+<List xmlns:ows="Microsoft SharePoint" DisableAttachments="TRUE" EnableContentTypes="FALSE" FolderCreation="FALSE" DisableGridEditing="TRUE" Direction="$Resources:Direction;" VersioningEnabled="FALSE" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <MetaData>
+      <ContentTypes>
+        <ContentType ID="0x010051d335884c914626a60c41b2d6bfdfcf" Name="SampleItem">
+            <FieldRefs>
+              <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+              <FieldRef ID="{95d08e04-f4ee-4020-bc66-aaf6d9adf983}" Name="LookupColumn" />
+              <FieldRef ID="{46727765-3752-480a-970e-b48bc90e90a9}" Name="Status" />
+            </FieldRefs>
+        </ContentType>
+      </ContentTypes>
+      <Fields>
+        <Field Name="LinkTitle" DisplayName="Name" Type="Text" />
+        <Field Name="Title" DisplayName="Name" Type="Text" Indexed="TRUE" />
+
+        <Field Name="LookupColumn" ID="{95d08e04-f4ee-4020-bc66-aaf6d9adf983}" DisplayName="Lookup Column" Type="Lookup" Required="FALSE" List="Lists/LookupList" ShowField="Title" />
+        <Field Name="Status" ID="{46727765-3752-480a-970e-b48bc90e90a9}" DisplayName="Status" Type="Choice" Required="TRUE">
+            <CHOICES>
+            <CHOICE>Active</CHOICE>
+            <CHOICE>Inactive</CHOICE>
+            </CHOICES>
+        </Field>
+      </Fields>
+      <Views>
+        <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+          <XslLink Default="TRUE">main.xsl</XslLink>
+          <JSLink>clienttemplates.js</JSLink>
+          <RowLimit Paged="TRUE">30</RowLimit>
+          <Toolbar Type="Standard" />
+          <ViewFields>
+            <FieldRef Name="LinkTitle" />
+            <FieldRef Name="LookupColumn" />
+            <FieldRef Name="Status" />
+          </ViewFields>
+          <Query>
+            <OrderBy>
+              <FieldRef Name="ID" Ascending='False'/>
+            </OrderBy>
+          </Query>
+        </View>
+      </Views>
+      <Forms>
+        <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+        <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+        <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      </Forms>
+    </MetaData>
+</List>

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "357cc9db-4060-482c-abe7-dd123d2bd442",
+  "alias": "RevlonCodingInterviewWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
+  "supportsThemeVariants": true,
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Advanced" },
+    "title": { "default": "Revlon Coding Interview" },
+    "description": { "default": "Revlon Coding Interview description" },
+    "officeFabricIconFontName": "Shop",
+    "properties": {
+      "webpartTitle": "Revlon Coding Interview"
+    }
+  }]
+}

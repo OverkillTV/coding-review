@@ -1,0 +1,51 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "revlon-coding-interview-client-side-solution",
+    "id": "adba221f-5bea-4d4b-bd5d-d1d7f9205bc6",
+    "version": "1.0.0.1",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": false,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.19.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Revlon Coding Interview description"
+      },
+      "longDescription": {
+        "default": "Revlon Coding Interview description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "revlon-coding-interview Feature",
+        "description": "The feature that activates elements of the revlon-coding-interview solution.",
+        "id": "a9ad33de-d5f7-4847-bce0-bfaa25ae4b4f",
+        "version": "1.0.0.1",
+        "assets": {
+          "elementManifests": [
+            "3_Lists.xml"
+          ],
+          "elementFiles": [
+            "schema_SampleList.xml"
+          ],
+          "upgradeActions": [
+            "upgrade_actions.xml"
+          ]
+        }
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/revlon-coding-interview.sppkg"
+  }
+}

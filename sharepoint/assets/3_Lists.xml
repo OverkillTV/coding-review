@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">    
+    <!-- List -->
+    <ListInstance
+        CustomSchema="schema_SampleList.xml"
+        FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+        Title="Sample List"
+        Description="Sample List for Revlon Code Review"
+        TemplateType="100"
+        Hidden="FALSE"
+        OnQuickLaunch="FALSE"
+        Url="Lists/SampleList">
+    </ListInstance>
+    <ListInstance
+        FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+        Title="Lookup List"
+        Description="Lookup List for testing"
+        TemplateType="100"
+        Hidden="FALSE"
+        OnQuickLaunch="FALSE"
+        Url="Lists/LookupList">
+        <Data>
+            <Rows>
+                <Row>
+                    <Field Name="ID">1</Field>
+                    <Field Name="Title">Item Lookup 1</Field>
+                </Row>
+                <Row>
+                    <Field Name="ID">2</Field>
+                    <Field Name="Title">Item Lookup 2</Field>
+                </Row>
+                <Row>
+                    <Field Name="ID">3</Field>
+                    <Field Name="Title">Item Lookup 3</Field>
+                </Row>
+            </Rows>
+        </Data>
+    </ListInstance>
+    <!-- End List -->
+</Elements>
