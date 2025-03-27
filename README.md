@@ -1,4 +1,3 @@
-Please forward this email to Cameron because it contains all the information to setup for the package.
 The error that Cameron had was due to the missing a lookup column (**LookupColumn**) and a text/choice column (**Status**).
 
 Basically the idea of that package was to demonstrate the ability to retrieve SharePoint list items through SharePoint REST API.
